@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Lily+Script+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Coiny", system-ui;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/Gif.gif'); 
+    background-size: cover;
+    background-position:center;
+    padding-right: 8%;
+    
+     
+
+}
+.Container {
+    width: 420px; /* define uma largura fixa de exatamente 420 pixels para o elemento que tiver a classe ou o nome Container. */
+    background-color: transparent; /* Fundo transparente para permitir o efeito de desfoque */
+    border: 2px solid rgba(255, 255, 255, .2); /* Borda com transparência */
+    
+    border-radius: 10px; /* Coloca borda */
+
+    color:  #a3335e; /* Coloca cor nas imagens de Usuário e o cadeado */
+
+    padding: 30px 40px; /*A propriedade padding: 30px 40px; define o espaçamento interno do elemento. Ele cria um espaço transparente entre o conteúdo (como um texto ou imagem) e a borda 
+    do próprio Container. Nesse caso, seria o quadrado onde tem as informações para o login */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267); /*A propriedade box-shadow: 0 0 10px rgba(0, 0, 0, 0.267); adiciona uma sombra suave e esfumaçada ao redor do seu elemento. É aquele efeito que dá uma sensação de "elevação" ou profundidade, fazendo o container parecer um card flutuando sobre o fundo. */
+    backdrop-filter: blur(6px); /* A propriedade backdrop-filter: blur(6px); cria um efeito de vidro fosco (glassmorphism), desfocando tudo o que estiver atrás do seu elemento. */
+}
+
+.Container h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.Input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.Input-box Input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(241, 32, 161, 0.918);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #c7128b;
+    padding: 20px 45px 20px 20px;
+}
+
+.Input-box input::placeholder {
+    color: hsl(320, 82%, 45%);
+}
+
+.Input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.Remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -15px 0 15px;
+}
+
+/*
+   margin &  padding
+
+   1 valor- margin: 20px- Todods os lados.
+   2 valores- margin 20px 30px - 1° valor: Em cima e em baixo. 2° valor: dos lados
+   3 valores- padding: 20px 10px 30px- 1° valor: em cima. 2° valor: dos lados. 3° valor: embaixo
+   4 valores- margin: 10px 30px 12px 33px- 1° valor: em cima. 2° valor: direita. 3° valor: embaixo. 4° valor: esquerda.  
+ 
+   */
+
+   
+   .Remember-forgot label input {
+    accent-color:  #fff; /* Coloca cor no simbolo de "Lembrar Senha" */
+    margin-right: 5px;
+
+}
+
+.Remember-forgot a {
+    text-decoration: none;
+    color:  #fff; /* Coloca cor no "Esqueci a senha" */
+}
+
+.Remember-forgot a:hover {
+    text-decoration: underline; /* Coloca uma linha em baixo do texto */
+} 
+
+    .login{
+        width: 100%; /* Está dizendo que o elemento com a classe .login vai ocupar toda a largura disponível do elemento onde ele está guardado (o elemento pai dele). */
+
+        height: 50px;  /* Define uma altura fixa de exatamente 50 pixels para o elemento que estiver dentro da classe .login. */
+
+        background-color: #ca0ea1; /* Cor do botão Login */
+        border: none; /* Deixar sem a borda preta */
+        border-radius: 40px; /* Define um tanto de borda nas laterais da botão */
+        cursor: pointer; /* Faz com que a seta do mouse vire uma "mãozinha" quando o cursor passa no botão de Login */
+        font-size: 16px; /* Tamanho da Fonte */
+        color: #333; /* Cor da fonte */
+        font-weight: 600; /* define a espessura da fonte, deixando o texto em negrito */
+        box-shadow:rgba(0, 0, 0, .2);
+        margin-top: 20px; 
+    }
+
+    .login:hover{
+        background-color: transparent;
+        border: 2px solid rgba(233, 15, 15, 0.2);
+        color: #ca0ea1;
+        transition: 0.5s;
+    } 
+
+    .registrer-link{
+        font-size: 14px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+
+     .registrer-link a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600px;
+     }
+
+
+     .registrer-link a:hover {
+        text-decoration: underline;
+     }
